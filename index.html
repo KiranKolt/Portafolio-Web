@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio de proyectos de videojuegos">
+    <title>Portafolio de Videojuegos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Cursor personalizado -->
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-outline" id="cursorOutline"></div>
+    
+    <!-- Canvas para partículas -->
+    <canvas id="particlesCanvas"></canvas>
+    
+    <!-- Efectos de luz -->
+    <div class="light-ray" id="lightRay1"></div>
+    <div class="light-ray" id="lightRay2"></div>
+    
+    <!-- Header y Navegación -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-logo">
+                <h1>Mi Portafolio</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+                <li><a href="#sobre-mi" class="nav-link">Sobre Mí</a></li>
+                <li><a href="#contacto" class="nav-link">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección Hero / Inicio -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h2 class="hero-title">Desarrollador de Videojuegos</h2>
+            <p class="hero-subtitle">Bienvenido a mi portafolio de proyectos</p>
+            <a href="#proyectos" class="btn btn-primary">Ver Proyectos</a>
+        </div>
+    </section>
+
+    <!-- Sección de Proyectos -->
+    <section id="proyectos" class="proyectos">
+        <div class="container">
+            <h2 class="section-title">Mis Proyectos</h2>
+            <p class="section-subtitle">Explora los videojuegos que he desarrollado</p>
+            
+            <div class="proyectos-grid">
+                <!-- Proyecto 1 -->
+                <article class="proyecto-card">
+                    <div class="proyecto-imagen">
+                        <img src="https://via.placeholder.com/400x300" alt="Proyecto 1" class="proyecto-img">
+                        <div class="proyecto-overlay">
+                            <span class="proyecto-categoria">Acción</span>
+                        </div>
+                    </div>
+                    <div class="proyecto-info">
+                        <h3 class="proyecto-titulo">Nombre del Videojuego 1</h3>
+                        <p class="proyecto-descripcion">Descripción breve del videojuego. Aquí puedes describir la mecánica principal, el género y las características destacadas.</p>
+                        <div class="proyecto-tecnologias">
+                            <span class="tecnologia-tag">Unity</span>
+                            <span class="tecnologia-tag">C#</span>
+                        </div>
+                        <div class="proyecto-enlaces">
+                            <a href="#" class="btn btn-secondary" target="_blank">Ver Demo</a>
+                            <a href="#" class="btn btn-outline" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Proyecto 2 -->
+                <article class="proyecto-card">
+                    <div class="proyecto-imagen">
+                        <img src="https://via.placeholder.com/400x300" alt="Proyecto 2" class="proyecto-img">
+                        <div class="proyecto-overlay">
+                            <span class="proyecto-categoria">Aventura</span>
+                        </div>
+                    </div>
+                    <div class="proyecto-info">
+                        <h3 class="proyecto-titulo">Nombre del Videojuego 2</h3>
+                        <p class="proyecto-descripcion">Descripción breve del videojuego. Aquí puedes describir la mecánica principal, el género y las características destacadas.</p>
+                        <div class="proyecto-tecnologias">
+                            <span class="tecnologia-tag">Unreal Engine</span>
+                            <span class="tecnologia-tag">C++</span>
+                        </div>
+                        <div class="proyecto-enlaces">
+                            <a href="#" class="btn btn-secondary" target="_blank">Ver Demo</a>
+                            <a href="#" class="btn btn-outline" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Proyecto 3 -->
+                <article class="proyecto-card">
+                    <div class="proyecto-imagen">
+                        <img src="https://via.placeholder.com/400x300" alt="Proyecto 3" class="proyecto-img">
+                        <div class="proyecto-overlay">
+                            <span class="proyecto-categoria">Estrategia</span>
+                        </div>
+                    </div>
+                    <div class="proyecto-info">
+                        <h3 class="proyecto-titulo">Nombre del Videojuego 3</h3>
+                        <p class="proyecto-descripcion">Descripción breve del videojuego. Aquí puedes describir la mecánica principal, el género y las características destacadas.</p>
+                        <div class="proyecto-tecnologias">
+                            <span class="tecnologia-tag">Godot</span>
+                            <span class="tecnologia-tag">GDScript</span>
+                        </div>
+                        <div class="proyecto-enlaces">
+                            <a href="#" class="btn btn-secondary" target="_blank">Ver Demo</a>
+                            <a href="#" class="btn btn-outline" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Proyecto 4 -->
+                <article class="proyecto-card">
+                    <div class="proyecto-imagen">
+                        <img src="https://via.placeholder.com/400x300" alt="Proyecto 4" class="proyecto-img">
+                        <div class="proyecto-overlay">
+                            <span class="proyecto-categoria">Puzzle</span>
+                        </div>
+                    </div>
+                    <div class="proyecto-info">
+                        <h3 class="proyecto-titulo">Nombre del Videojuego 4</h3>
+                        <p class="proyecto-descripcion">Descripción breve del videojuego. Aquí puedes describir la mecánica principal, el género y las características destacadas.</p>
+                        <div class="proyecto-tecnologias">
+                            <span class="tecnologia-tag">Unity</span>
+                            <span class="tecnologia-tag">C#</span>
+                        </div>
+                        <div class="proyecto-enlaces">
+                            <a href="#" class="btn btn-secondary" target="_blank">Ver Demo</a>
+                            <a href="#" class="btn btn-outline" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Sobre Mí -->
+    <section id="sobre-mi" class="sobre-mi">
+        <div class="container">
+            <h2 class="section-title">Sobre Mí</h2>
+            <div class="sobre-mi-content">
+                <div class="sobre-mi-texto">
+                    <p>Apasionado desarrollador de videojuegos con experiencia en múltiples motores y tecnologías. Me encanta crear experiencias interactivas y emocionantes para los jugadores.</p>
+                    <p>Especializado en diseño de mecánicas de juego, programación y optimización. Siempre buscando aprender nuevas tecnologías y mejorar mis habilidades.</p>
+                </div>
+                <div class="sobre-mi-habilidades">
+                    <h3>Habilidades</h3>
+                    <ul class="habilidades-list">
+                        <li>Unity Engine</li>
+                        <li>Unreal Engine</li>
+                        <li>Godot</li>
+                        <li>Programación (C#, C++, GDScript)</li>
+                        <li>Diseño de Niveles</li>
+                        <li>Game Design</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contacto" class="contacto">
+        <div class="container">
+            <h2 class="section-title">Contacto</h2>
+            <p class="section-subtitle">¿Tienes alguna pregunta o quieres colaborar?</p>
+            <form class="contacto-form" id="contactoForm">
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+            </form>
+            <div class="contacto-redes">
+                <a href="#" class="red-social" target="_blank">GitHub</a>
+                <a href="#" class="red-social" target="_blank">LinkedIn</a>
+                <a href="#" class="red-social" target="_blank">Twitter</a>
+                <a href="#" class="red-social" target="_blank">Email</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Portafolio de Videojuegos. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
